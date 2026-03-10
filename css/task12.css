@@ -1,0 +1,71 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;}
+input:checked{
+background: linear-gradient(90deg, #00ff99 0%, #00ccff 100%);
+}
+.nav-head {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.img-head {
+    position: relative;
+    animation-name: logo;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
+    animation-timing-function: linear;
+}
+
+@keyframes logo {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        left: -200px;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+#skip a{
+font-size: 20px;
+text-decoration: none;
+        background: linear-gradient(90deg, #00ff99 0%, #00ccff 100%);
+margin-right: 50px;
+        border: 1px solid #00ff99;
+                                                    padding: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+        border-radius: 15px;
+letter-spacing: 5px;
+color: #000000;
+}
+#skip a:hover {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    color: #000000;
+        border-radius: 15px;
+        border: 1px solid #00ccff;
+        outline: 1px solid #00ff99;}
+ p a:hover {
+    letter-spacing: 3px;
+ }

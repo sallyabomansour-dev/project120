@@ -1,0 +1,546 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container,
+section {
+    background-color: #000000;
+}
+
+main {
+    height: fit-content;
+    background-color: #000000;
+}
+
+.container {
+    width: 100%;
+}
+
+section {
+    height: fit-content;
+    overflow: hidden;
+}
+
+
+
+.nav-two {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 20px;
+    padding-top: 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 95%;
+}
+
+
+
+.tit-nav2 {
+    text-align: left;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    width: 100%;
+    font-size: 29px;
+    color: white;
+}
+
+
+.nav-head {
+    background-color: #1c1c1f;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 10%;
+    box-shadow: (2px 2px 20px #00ff99);
+    position: fixed;
+    z-index: 57;
+    top: 0;
+    left: 0;
+}
+
+#in a,
+#up a,
+#log a,
+#user,
+#acc a,
+#courses a,
+#prices a {
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-right: 20px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 0 0 2px #00ff99,
+        0 0 2px #00ff99, 0 0 2px #00ff99,
+        0 0 2px #00ff99;
+}
+
+#user {
+    position: relative;
+    animation-name: account;
+    animation-delay: 0.5s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes account {
+    0% {
+        color: #ffffff;
+        transform: scale(1);
+    }
+
+    100% {
+        color: #00ff99;
+        transform: scale(1.1);
+    }
+}
+
+.icon-login #in a,
+.icon-login #up a,
+.icon-login #acc a,
+.icon-login #courses a,
+.icon-login #prices a {
+    flex-basis: 10%;
+    text-shadow: 0 0 40px #00ff99;
+    padding: 6px;
+    border-radius: 15px;
+
+}
+
+.underline {
+    background: linear-gradient(90deg, #00ff99 0%, #00ccff 100%);
+    height: 0.5px;
+    width: 25%;
+    border-radius: 10px;
+    margin-top: -50px
+}
+.con-1:hover .underline {
+   width: 30%;
+}
+
+.con-1{
+    height: fit-content;
+}
+#log a {
+    flex-basis: 10%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #00ccff;
+    outline: 1px solid #00ff99;
+    box-shadow: (2px 2px 20px #00ff99);
+
+}
+
+.icon-login #in a:hover,
+.icon-login #up a,
+#log a,
+.icon-login #courses a:hover,
+.icon-login #prices a:hover,
+.icon-login #acc a:hover {
+    background: linear-gradient(90deg, #00ff99 0%, #00ccff 100%);
+    color: #000000;
+    border-radius: 15px;
+    border: 1px solid #00ccff;
+    outline: 1px solid #00ff99;
+}
+
+#log a:hover {
+    border: 1px solid #00ccff;
+    outline: 1px solid #00ff99;
+}
+
+.icon-login {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    text-decoration: none;
+    align-items: center;
+    flex-basis: 80%;
+}
+
+.img-head {
+    position: relative;
+    animation-name: logo;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+
+    animation-timing-function: linear;
+}
+
+@keyframes logo {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        left: 60px;
+        top: 0px;
+    }
+
+    75% {
+        left: -200px;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+
+
+.parent1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: fit-content;
+    width: 100%;
+    background-color: #000000;
+}
+.parent2 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: auto;
+    height: fit-content;
+    overflow-x: scroll;
+    width: 280%;
+    background-color: #000000;
+}
+.parent2::-webkit-scrollbar-thumb,
+.parent2::-webkit-scrollbar {
+    background-color: #000000;
+    width: 12px;
+}
+
+
+.parent1 .course1,
+.parent1 .course3,
+.parent1 .course4,
+.parent1 .course5,
+.parent1 .course6,
+.parent1 .course7,
+.parent1 .course8,
+.parent1 .course9,
+.parent1 .course2 {
+    flex-basis: 45%;
+    overflow: hidden;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: 260px;
+}
+
+.parent1 {
+    padding-top: 50px;
+}
+ .parent2{
+    margin-top: 50px;
+    
+}
+
+.parent2 .course1,
+.parent2 .course3,
+.parent2 .course4,
+.parent2 .course5,
+.parent2 .course6,
+.parent2 .course7,
+.parent2 .course8,
+.parent2 .course9,
+.parent2 .course2 {
+    flex-basis: 400px;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-right: 30px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 430px;
+}
+
+.course1:hover,
+.course2:hover,
+.course3:hover,
+.course4:hover,
+.course5:hover,
+.course6:hover,
+.course7:hover,
+.course8:hover,
+.course9:hover {
+    transform: translatey(-10px);
+    border: 1px solid #00ccff;
+        outline: 1px solid #00ff99;}
+
+.parent1 .course1:hover,
+.parent1 .course2:hover,
+.parent1 .course3:hover,
+.parent1 .course4:hover,
+.parent1 .course5:hover,
+.parent1 .course6:hover,
+.parent1 .course7:hover,
+.parent1 .course8:hover,
+.parent1 .course9:hover {
+    transform: translatey(-10px);
+        border: 1px solid #00ccff;
+            outline: 1px solid #00ff99;
+}
+
+.sall #num {
+    color: #000000;
+    background-color: #00ff99;
+    border-radius: 50px;
+    font-size: 13px;
+    position: fixed;
+    width: 1.2%;
+    text-align: center;
+    right: 135px;
+    top: 5%;
+}
+
+.all {
+    width: 350%;
+    position: absolute;
+    top: 150%;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 1500%;
+    right: -100px;
+    background-color: white;
+}
+
+.all a {
+    color: #000;
+    margin: 4px 0;
+    padding: 0;
+    background-color: #00ff99;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sall {
+    width: 5%;
+    padding: 5px;
+    position: relative;
+}
+
+.parent1 .img {
+    width: 42%;
+    padding: 10px;
+    border-radius: 12%;
+    height: 100%;
+}
+
+.parent2 .img {
+    width: 105%;
+    height: 230px;
+}
+
+.parent2 .course1 .des,
+.parent2 .course2 .des,
+.parent2 .course3 .des,
+.parent2 .course4 .des,
+.parent2 .course5 .des,
+.parent2 .course6 .des,
+.parent2 .course7 .des,
+.parent2 .course8 .des,
+.parent2 .course9 .des {
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 10px;
+    height: 140px;
+    background: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.parent1 .course1 .des,
+.parent1 .course2 .des,
+.parent1 .course3 .des,
+.parent1 .course4 .des,
+.parent1 .course5 .des,
+.parent1 .course6 .des,
+.parent1 .course7 .des,
+.parent1 .course8 .des,
+.parent1 .course9 .des {
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 30px;
+    width: 80%;
+    background: none;
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.des b {
+    text-shadow: 0 0 2px #00ff99,
+        0 0 2px #00ff99, 0 0 2px #00ff99,
+        0 0 2px #00ff99
+}
+
+.con-1  {
+padding-top: 50px;
+}
+
+.parent1 .add {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.parent2 .add {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.add .favorite {
+    padding: 4px;
+    background: linear-gradient(90deg, #00ff99 0%, #00ccff 100%);
+    color: #000000;
+    align-content: flex-end;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 50%;
+    border: 1px solid #00ccff;
+    outline: 1px solid #00ff99;
+}
+
+.add .favorite:hover {
+    background: linear-gradient(90deg, #ffffff 0%, #00ff99 100%);
+    color: #000000;
+    border: 1px solid #00ccff;
+    outline: 1px solid #00ff99;
+}
+
+.min,
+.plus {
+    width: 10%;
+    color: #ffffff;
+    border-radius: 3px;
+    height: 10%;
+    border: 1px solid #00ccff;
+    outline: 1px solid #00ff99;
+}
+
+.plus {
+    margin-right: 70px;
+}
+
+.min:hover,
+.plus:hover {
+    background: linear-gradient(90deg, #00ff99 0%, #00ccff 100%);
+    color: #000000;
+    cursor: pointer;
+}
+
+.fa-regular {
+    font-size: 27px;
+    margin-right: 10px;
+    color: #00ff99;
+    cursor: pointer;
+}
+
+.heart {
+    font-size: 27px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+    color: #00ff99;
+}
+
+.incres {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-top: 80px;
+    flex-flow: row nowrap;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.incres p {
+    color: #ffffff;
+    width: 10%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.heart.active {
+    color: #00ff99;
+    transform: scale(1.1);
+
+}
+
+.fa-shopping-cart {
+    font-size: 20px;
+    text-shadow: 0 0 2px #00ff99,
+        0 0 2px #00ff99, 0 0 2px #00ff99,
+        0 0 2px #00ff99;
+    color: white;
+    cursor: pointer;
+}
+
+#total-price {
+    margin: auto;
+    text-shadow: 0 0 10px #00ff99,
+        0 0 15px #00ccff, 0 0 10px #00ff99,
+        0 0 15px #00ccff;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 50px 0 50px 0;
+    color: white;
+    animation-name: totalprice;
+    animation-delay: 0.5s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+}
+
+@keyframes totalprice {
+    0% {
+        color: #ffffff;
+        transform: scale(1);
+    }
+
+    100% {
+        color: #00ff99;
+        transform: scale(0.8);
+    }
+}
